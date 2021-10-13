@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity2">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/purple_500"
-        app:title="@string/app_name"
+        app:title="Information"
         app:titleTextColor="@color/white" />
 
     <RelativeLayout
@@ -25,27 +25,33 @@
             android:layout_margin="10dp"
             android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/name"
+            <TextView
+                android:id="@+id/show_name"
+                android:textColor="@color/purple_500"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textSize="20sp"
                 android:hint="name" />
 
-            <EditText
-                android:id="@+id/phone"
+            <TextView
+                android:id="@+id/show_phone"
+                android:textColor="@color/purple_500"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
                 android:hint="phone"
                 android:inputType="number" />
 
             <Button
-                android:id="@+id/submit"
+                android:id="@+id/back"
+                android:text="Back"
+                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="SUBMIT"
-                android:textAllCaps="true" />
+                android:layout_height="match_parent"/>
 
         </LinearLayout>
+
     </RelativeLayout>
 </LinearLayout>
